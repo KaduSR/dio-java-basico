@@ -32,4 +32,21 @@ public class ListaTarefa {
     public void obterDescricoesTarefa(){
         System.out.println(tarefaList);
     }
+    public static void main(String[] args) {
+        ListaTarefa listaTarefa = new ListaTarefa();
+
+        System.out.println("O número total de tarefa é " + listaTarefa.obterNumeroTotalTarefas());
+        
+        listaTarefa.adicionarTarefa("Estudar Java");
+        listaTarefa.adicionarTarefa("Estudar Java");
+        listaTarefa.adicionarTarefa("Estudar Java2");
+
+        System.out.println("O número total de tarefa é " + listaTarefa.obterNumeroTotalTarefas());
+
+        listaTarefa.removerTarefa("Estudar Java");
+        System.out.println("O número total de tarefa é " + listaTarefa.obterNumeroTotalTarefas());
+
+        listaTarefa.obterDescricoesTarefa();
+
+    }
 }
